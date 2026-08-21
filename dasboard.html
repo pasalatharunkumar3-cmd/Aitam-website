@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tata Cars Sales Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.card:hover{
+    background-color: antiquewhite;
+    
+}
+
+.card h3{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.card h2{
+    color:#0077cc;
+    font-size:30px;
+}
+
+.sales-table{
+    width:95%;
+    margin:20px auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.sales-table th{
+    background:#003366;
+    color:white;
+    padding:12px;
+}
+
+.sales-table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.progress{
+    width:80%;
+    height:12px;
+    background:#ddd;
+    margin:auto;
+    border-radius:10px;
+}
+
+.bar{
+    height:12px;
+    background:#28a745;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+🚗 Tata Cars Sales Dashboard
+</div>
+
+<div class="container">
+
+<div class="card">
+<h3>Total Sales</h3>
+<h2>12,500</h2>
+</div>
+
+<div class="card">
+<h3>Total Revenue</h3>
+<h2>₹95 Cr</h2>
+</div>
+
+<div class="card">
+<h3>Top Selling Car</h3>
+<h2>Nexon</h2>
+</div>
+
+<div class="card">
+<h3>Monthly Target</h3>
+<h2>85%</h2>
+</div>
+
+</div>
+
+<table class="sales-table">
+
+<tr>
+<th>Car Model</th>
+<th>Units Sold</th>
+<th>Revenue</th>
+<th>Target</th>
+</tr>
+
+<tr>
+<td>Nexon</td>
+<td>4500</td>
+<td>₹36 Cr</td>
+<td>
+<div class="progress">
+<div class="bar" style="width:90%;"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>Punch</td>
+<td>3500</td>
+<td>₹22 Cr</td>
+<td>
+<div class="progress">
+<div class="bar" style="width:80%;"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>Harrier</td>
+<td>2000</td>
+<td>₹20 Cr</td>
+<td>
+<div class="progress">
+<div class="bar" style="width:70%;"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>Safari</td>
+<td>1500</td>
+<td>₹17 Cr</td>
+<td>
+<div class="progress">
+<div class="bar" style="width:60%;"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>Altroz</td>
+<td>1000</td>
+<td>₹10 Cr</td>
+<td>
+<div class="progress">
+<div class="bar" style="width:50%;"></div>
+</div>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
